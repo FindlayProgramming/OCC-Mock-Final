@@ -6,11 +6,14 @@ import webbrowser
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
-def callback(url):
+OUTPUT_PATH = Path(__file__).parent
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\\Users\\findl\\OneDrive\\Desktop\\OCC designs\\2\\build\\assets\\frame1")
+
+def callback_page(url):
     webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui.py')
 
-OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame1")
+def callback_web(url):
+    webbrowser.open_new('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter')
 
 
 def relative_to_assets(path: str) -> Path:
@@ -48,19 +51,35 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback (r"C:\\Users\\findl\\OneDrive\Documents\\Github\\OCC-Mock\\build\\gui.py"),
+    command=lambda: callback_page (r"C:\\Users\\findl\\OneDrive\Documents\\Github\\OCC-Mock\\build\\gui.py"),
     relief="flat"
 )
 button_1.place(
     x=631.0,
-    y=429.0,
+    y=388.0,
+    width=180.0,
+    height=55.0
+)
+
+button_image_2 = PhotoImage(
+    file=relative_to_assets("button_2.png"))
+button_2 = Button(
+    image=button_image_2,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: callback_web ('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter'),
+    relief="flat"
+)
+button_2.place(
+    x=631.0,
+    y=457.0,
     width=180.0,
     height=55.0
 )
 
 canvas.create_text(
-    21.0,
-    14.0,
+    107.0,
+    5.0,
     anchor="nw",
     text="Weather Dashboard",
     fill="#333333",
@@ -104,10 +123,10 @@ canvas.create_text(
 )
 
 canvas.create_rectangle(
-    21.0,
-    63.0,
-    81.0,
-    68.0,
+    107.0,
+    49.0,
+    167.0,
+    54.0,
     fill="#24A0FA",
     outline="")
 
@@ -211,11 +230,19 @@ image_6 = canvas.create_image(
 )
 
 canvas.create_rectangle(
-    477.0,
+    478.0,
     223.0,
-    559.0,
+    560.0,
     369.0,
     fill="#FFFFFF",
+    outline="")
+
+canvas.create_rectangle(
+    8.0,
+    7.0,
+    90.0,
+    153.0,
+    fill="#E5E5E5",
     outline="")
 
 canvas.create_rectangle(
@@ -308,6 +335,38 @@ image_10 = canvas.create_image(
     513.0,
     456.0,
     image=image_image_10
+)
+
+button_image_3 = PhotoImage(
+    file=relative_to_assets("button_3.png"))
+button_3 = Button(
+    image=button_image_3,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_3 clicked"),
+    relief="flat"
+)
+button_3.place(
+    x=17.0,
+    y=11.0,
+    width=62.0,
+    height=57.0
+)
+
+button_image_4 = PhotoImage(
+    file=relative_to_assets("button_4.png"))
+button_4 = Button(
+    image=button_image_4,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_4 clicked"),
+    relief="flat"
+)
+button_4.place(
+    x=16.0,
+    y=85.0,
+    width=63.0,
+    height=55.0
 )
 window.resizable(False, False)
 window.mainloop()
