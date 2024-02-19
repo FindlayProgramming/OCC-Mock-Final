@@ -21,7 +21,7 @@ email: findlay.duffey2@gmail.com
     <p align="center">
         Documentation
         <br />
-        <a href="https://github.com/FindlayProgramming"><strong>Doc location📃</strong></a>
+        <a href="https://github.com/ParthJadhav/Tkinter-Designer/blob/master/docs/instructions.md"><strong>Tkinter-Designer Docs !Please Follow this!📃</strong></a>
         <br />
         <br />
     </p>
