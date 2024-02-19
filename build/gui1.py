@@ -1,24 +1,23 @@
-
-from pathlib import Path
 import webbrowser
+from pathlib import Path
+
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\\Users\\findl\\OneDrive\\Desktop\\OCC designs\\2\\build\\assets\\frame1")
-
-def callback_page(url):
-    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui.py')
-
-def callback_web(url):
-    webbrowser.open_new('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter')
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame1")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
+def callback_page(url):
+    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui.py')
+
+def callback_web(url):
+    webbrowser.open_new(url)
 
 window = Tk()
 
@@ -51,7 +50,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r"C:\\Users\\findl\\OneDrive\Documents\\Github\\OCC-Mock\\build\\gui.py"),
+    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui.py'),
     relief="flat"
 )
 button_1.place(
@@ -67,7 +66,7 @@ button_2 = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_web ('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter'),
+    command=lambda: callback_web ('https://www.gov.uk/government/news/cold-health-alerts-issued-by-ukhsa-and-the-met-office'),
     relief="flat"
 )
 button_2.place(
@@ -343,7 +342,7 @@ button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_3 clicked"),
+    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui.py'),
     relief="flat"
 )
 button_3.place(
@@ -359,7 +358,7 @@ button_4 = Button(
     image=button_image_4,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_4 clicked"),
+    command=lambda: callback_web ('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter'),
     relief="flat"
 )
 button_4.place(

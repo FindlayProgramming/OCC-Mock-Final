@@ -1,20 +1,23 @@
-
-from pathlib import Path
 import webbrowser
+from pathlib import Path
+
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\\Users\\findl\\OneDrive\\Desktop\\OCC designs\\2\\build\\assets\\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame0")
 
-def callback(url):
-    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build1\\gui1.py')
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
+def callback_page(url):
+    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui1.py')
+
+username = ""
+pw = ""
 
 window = Tk()
 
@@ -47,7 +50,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback (r"C:\\Users\\findl\\OneDrive\Documents\\Github\\OCC-Mock\\build1\\gui1.py"),
+    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui1.py'),
     relief="flat"
 )
 button_1.place(
@@ -129,7 +132,7 @@ canvas.create_text(
     anchor="nw",
     text="In this app you will find weather forecasts, reports and advice!\n\n",
     fill="#FFFFFF",
-    font=("RubikRoman Bold", 16 * -1)
+    font=("RubikRoman Bold", 14 * -1)
 )
 
 canvas.create_text(
@@ -138,7 +141,7 @@ canvas.create_text(
     anchor="nw",
     text="Try the tracking tool today!",
     fill="#FFFFFF",
-    font=("RubikRoman Bold", 16 * -1)
+    font=("RubikRoman Bold", 14 * -1)
 )
 window.resizable(False, False)
 window.mainloop()

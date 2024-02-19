@@ -1,9 +1,9 @@
 <!--
-repo name: OCC Mock
+repo name: OCC-Mock
 description: Documentation of the OCC Mock Designs
 github name:  FindlayProgramming
 link: https://github.com/FindlayProgramming/OCC-Mock
-logo path: Images/Health.jpg
+logo path: Images/Dashboard1.png
 screenshot:
 twitter: username
 email: findlay.duffey2@gmail.com
@@ -15,7 +15,7 @@ email: findlay.duffey2@gmail.com
 <br />
 <p align="center">
     <a href="https://github.com/FindlayProgramming">
-        <img src="Images/Health.jpg" alt="Logo" width="80" height="80">
+        <img src="Images/Dashboard1.png" alt="Logo" width="350" height="350">
     </a>
 <h3 align="center"><a href="https://github.com/FindlayProgramming">OCC Repo</a></h3>
     <p align="center">
@@ -36,8 +36,7 @@ email: findlay.duffey2@gmail.com
 - [Documentation](#Documentation)
 - [Includes](#Includes)
 - [Assets](#Assets)
-
-
+- [Credits](#Credits)
 
 <!-- Requirements -->
 ## Requirements
@@ -84,20 +83,23 @@ Firstly, before development the client requirements will be mentioned below:
 * [Tkinter-Designer]()
 * [Figma]()
 
-### Documentation
+### Introduction
 
+The build includes assets, packages and prototypes for the client and is all free to access. The assets include frames as well as images for buttons, entries and images etc.
 
+In order to use these programs, Tkinter-Designer is needed as well as other packages it is dependent on such as Pillow, the relevant dll files and poetry.
 
 
 <!-- Includes -->
-## Inludes
+## Includes
 * Health Advice Group Designs
 * The prototypes
-
-### Used
-
-* [Tkinter-Designer](https://github.com/ParthJadhav/Tkinter-Designer)
 
 ### Future Changes
 
 * The future changes have yet to be decided...
+
+### Credits To
+* Figma
+* ParthJadhav
+* Flaticon
