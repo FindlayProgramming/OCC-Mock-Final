@@ -15,7 +15,7 @@ def search_data(id, name, city, age):
     rows = cursor.execute("SELECT user_id, name, city, age FROM user").fetchall()
     search = cursor.execute(
         'SELECT user_id, name, city, age FROM user WHERE name =?',(target_name,), #Selects specific name stored.
-        ).fetchall() #Selects the columns from the salesman table and fetches them all.
+        ).fetchall() #Selects the columns from the users table and fetches them all.
     conn.commit() #Commits to changes.
     print('Data entered...')
     conn.close() #Closes connection to DB.
