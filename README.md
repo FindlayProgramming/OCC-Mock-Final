@@ -35,8 +35,7 @@ email: findlay.duffey2@gmail.com
 - [Built With](#Built-with)
 - [Documentation](#Documentation)
 - [Includes](#Includes)
-- [Assets](#Assets)
-- [Credits](#Credits)
+- [Credits](#Credits To)
 
 <!-- Requirements -->
 ## Requirements
@@ -80,8 +79,8 @@ Firstly, before development the client requirements will be mentioned below:
 
 
 ### Built With
-* [Tkinter-Designer]()
-* [Figma]()
+* [Tkinter-Designer](https://github.com/ParthJadhav/Tkinter-Designer/blob/master/docs/instructions.md#getting-started-1)
+* [Figma](https://www.figma.com/login?is_not_gen_0=true)
 
 ### Introduction
 
