@@ -19,9 +19,9 @@ email: findlay.duffey2@gmail.com
     </a>
 <h3 align="center"><a href="https://github.com/FindlayProgramming">OCC Repo</a></h3>
     <p align="center">
-        Documentation
+        Instructions
         <br />
-        <a href="https://github.com/ParthJadhav/Tkinter-Designer/blob/master/docs/instructions.md"><strong>Tkinter-Designer Docs !Please Follow this!📃</strong></a>
+        <a href="https://github.com/ParthJadhav/Tkinter-Designer/blob/master/docs/instructions.md"><strong>Tkinter-Designer Instructions !Please Follow this!📃</strong></a>
         <br />
         <br />
     </p>
