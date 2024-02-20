@@ -7,7 +7,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage #Imports
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame1") #Change this path to wherever frame1 is located on your pc.
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Documents\Github\OCC-Mock\build\assets\frame1") #Change this path to wherever frame1 is located on your pc.
 
 
 def relative_to_assets(path: str) -> Path:

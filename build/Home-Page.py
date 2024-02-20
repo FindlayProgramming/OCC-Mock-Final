@@ -7,14 +7,14 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage #Imports
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame0") #Change the path to wherever frame0 is located on your pc.
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Documents\Github\OCC-Mock\build\assets\frame0") #Change the path to wherever frame0 is located on your pc.
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path) #Returns the relevant path so assets can be used.
 
 def callback_page(url):
-    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Dashboard.py') #Opens up the Dashboard file.
+    webbrowser.open_new(r'C:\Users\findl\OneDrive\Documents\Github\OCC-Mock\build\Dashboard.py') #Opens up the Dashboard file.
 
 username = ""
 pw = ""
@@ -50,7 +50,7 @@ button_1 = Button( #Creates button.
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Dashboard.py'), #Once the button is clicked it will open up this file. Make sure to change the path!!!
+    command=lambda: callback_page (r'C:\Users\findl\OneDrive\Documents\Github\OCC-Mock\build\Dashboard.py'), #Once the button is clicked it will open up this file. Make sure to change the path!!!
     relief="flat"
 )
 button_1.place( #Places button.
