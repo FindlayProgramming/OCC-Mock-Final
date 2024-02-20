@@ -3,29 +3,29 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage #Imports
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame1") #Change this path to wherever frame1 is located on your pc.
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 def callback_page(url):
-    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py')
+    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py') #Will open the home-page file, will be relevant when clicking the buttons available.
 
 def callback_web(url):
-    webbrowser.open_new(url)
+    webbrowser.open_new(url) #Does the same action as line 16 but instead opens up your browser to direct to a relevant website.
 
 window = Tk()
 
-window.geometry("862x519")
+window.geometry("862x519") #Size of window.
 window.configure(bg = "#FFFFFF")
 
 
-canvas = Canvas(
+canvas = Canvas( #Creates a canvas (all the code below is for the figma designs).
     window,
     bg = "#FFFFFF",
     height = 519,
@@ -36,7 +36,7 @@ canvas = Canvas(
 )
 
 canvas.place(x = 0, y = 0)
-canvas.create_rectangle(
+canvas.create_rectangle( #Creates a rectangle and places it in the relevant place.
     431.0,
     0.0,
     862.0,
@@ -45,15 +45,15 @@ canvas.create_rectangle(
     outline="")
 
 button_image_1 = PhotoImage(
-    file=relative_to_assets("button_1.png"))
-button_1 = Button(
+    file=relative_to_assets("button_1.png")) #This will be used in the python files as a functioning button, the image is what it will look like essentially.
+button_1 = Button( #Creates a button.
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'),
+    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'), #This line means that if a the button is clicked it will direct to the other python file "Home-Page".
     relief="flat"
 )
-button_1.place(
+button_1.place( #Sets the place of the button.
     x=631.0,
     y=388.0,
     width=180.0,
@@ -76,7 +76,7 @@ button_2.place(
     height=55.0
 )
 
-canvas.create_text(
+canvas.create_text( #Creates some text.
     107.0,
     5.0,
     anchor="nw",
@@ -130,8 +130,8 @@ canvas.create_rectangle(
     outline="")
 
 image_image_1 = PhotoImage(
-    file=relative_to_assets("image_1.png"))
-image_1 = canvas.create_image(
+    file=relative_to_assets("image_1.png")) #Allows the relevant image to be used in the program.
+image_1 = canvas.create_image( #Creates the image.
     196.0,
     139.0,
     image=image_image_1
@@ -336,13 +336,13 @@ image_10 = canvas.create_image(
     image=image_image_10
 )
 
-button_image_3 = PhotoImage(
+button_image_3 = PhotoImage( #Behaves the same way as the previous button/s.
     file=relative_to_assets("button_3.png"))
 button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\gui.py'),
+    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'),
     relief="flat"
 )
 button_3.place(
@@ -358,7 +358,7 @@ button_4 = Button(
     image=button_image_4,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_web ('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter'),
+    command=lambda: callback_web ('https://www.metoffice.gov.uk/weather/warnings-and-advice/seasonal-advice/health-wellbeing/stay-well-in-winter/stay-well-in-winter'), #This behaves in the same way as the other actions but instead redirects you to a web page.
     relief="flat"
 )
 button_4.place(

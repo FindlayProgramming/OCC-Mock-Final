@@ -3,18 +3,18 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage #Imports
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame0") #Change the path to wherever frame0 is located on your pc.
 
 
 def relative_to_assets(path: str) -> Path:
-    return ASSETS_PATH / Path(path)
+    return ASSETS_PATH / Path(path) #Returns the relevant path so assets can be used.
 
 def callback_page(url):
-    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Dashboard.py')
+    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Dashboard.py') #Opens up the Dashboard file.
 
 username = ""
 pw = ""
@@ -25,7 +25,7 @@ window.geometry("862x519")
 window.configure(bg = "#24A0FA")
 
 
-canvas = Canvas(
+canvas = Canvas( #Creates Canvas (Relevant to figma).
     window,
     bg = "#24A0FA",
     height = 519,
@@ -35,7 +35,7 @@ canvas = Canvas(
     relief = "ridge"
 )
 
-canvas.place(x = 0, y = 0)
+canvas.place(x = 0, y = 0) #Places canvas.
 canvas.create_rectangle(
     430.9999999999999,
     0.0,
@@ -45,22 +45,22 @@ canvas.create_rectangle(
     outline="")
 
 button_image_1 = PhotoImage(
-    file=relative_to_assets("button_1.png"))
-button_1 = Button(
+    file=relative_to_assets("button_1.png")) #Gets the image for the button, will essentially be what the button will look like.
+button_1 = Button( #Creates button.
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Dashboard.py'),
+    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Dashboard.py'), #Once the button is clicked it will open up this file.
     relief="flat"
 )
-button_1.place(
+button_1.place( #Places button.
     x=556.9999999999999,
     y=401.0,
     width=180.0,
     height=55.0
 )
 
-canvas.create_text(
+canvas.create_text( #Creates some text.
     39.999999999999886,
     10.000000000000007,
     anchor="nw",
@@ -78,7 +78,7 @@ canvas.create_text(
     font=("RubikRoman Bold", 24 * -1)
 )
 
-canvas.create_rectangle(
+canvas.create_rectangle( #Creates a rectangle.
     39.999999999999886,
     57.00000000000001,
     99.99999999999989,
@@ -87,8 +87,8 @@ canvas.create_rectangle(
     outline="")
 
 entry_image_1 = PhotoImage(
-    file=relative_to_assets("entry_1.png"))
-entry_bg_1 = canvas.create_image(
+    file=relative_to_assets("entry_1.png")) #Allows for this image to be used in the program.
+entry_bg_1 = canvas.create_image( #Creates image.
     650.4999999999999,
     167.5,
     image=entry_image_1
@@ -99,7 +99,7 @@ entry_1 = Entry(
     fg="#000716",
     highlightthickness=0
 )
-entry_1.place(
+entry_1.place( #Places image.
     x=489.9999999999999,
     y=137.0,
     width=321.0,
