@@ -35,7 +35,7 @@ email: findlay.duffey2@gmail.com
 - [Built With](#Built-with)
 - [Documentation](#Documentation)
 - [Includes](#Includes)
-- [Credits](#Credits To)
+- [Credits](#Credits-To)
 
 <!-- Requirements -->
 ## Requirements
