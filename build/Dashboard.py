@@ -7,14 +7,14 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage #Imports
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\findl\OneDrive\Desktop\OCC designs\1\build\assets\frame1") #Change this path to wherever frame1 is located on your pc.
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\your-username\OneDrive\Desktop\OCC designs\1\build\assets\frame1") #Change this path to wherever frame1 is located on your pc.
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 def callback_page(url):
-    webbrowser.open_new(r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py') #Will open the home-page file, will be relevant when clicking the buttons available.
+    webbrowser.open_new(r'C:\\Users\\your-username\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py') #Will open the home-page file, will be relevant when clicking the buttons available. Make sure to change this path!!!
 
 def callback_web(url):
     webbrowser.open_new(url) #Does the same action as line 16 but instead opens up your browser to direct to a relevant website.
@@ -50,7 +50,7 @@ button_1 = Button( #Creates a button.
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'), #This line means that if a the button is clicked it will direct to the other python file "Home-Page".
+    command=lambda: callback_page (r'C:\\Users\\your-username\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'), #This line means that if a the button is clicked it will direct to the other python file "Home-Page". Make sure to change this path!!!
     relief="flat"
 )
 button_1.place( #Sets the place of the button.
@@ -342,7 +342,7 @@ button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: callback_page (r'C:\\Users\\findl\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'),
+    command=lambda: callback_page (r'C:\\Users\\your-username\\OneDrive\\Documents\\Github\\OCC-Mock\\build\\Home-Page.py'), #Make sure to change this path!!!
     relief="flat"
 )
 button_3.place(
