@@ -1,6 +1,6 @@
 import webbrowser
 from pathlib import Path
-
+# !!! Important: Most of the code will be repeated and thus will not be commented on !!!
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage #Imports
